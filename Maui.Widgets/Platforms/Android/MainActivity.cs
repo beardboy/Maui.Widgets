@@ -1,8 +1,5 @@
 ﻿using Android.App;
 using Android.Content.PM;
-using Android.OS;
-using AndroidX.Work;
-using Java.Util.Concurrent;
 
 namespace Maui.Widgets;
 

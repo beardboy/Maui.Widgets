@@ -96,6 +96,8 @@ public class CircleWidget : AppWidgetProvider
     {
         var updateViews = new RemoteViews(context.PackageName, Resource.Layout.widget_circle);
 
+        // Below is only needed for updating TextViews
+        /*
         var date = $"{DateTimeOffset.Now:MM/dd/yyyy}";
         var time = $"{DateTimeOffset.Now:hh:mm:ss tt}";
 
@@ -119,6 +121,7 @@ public class CircleWidget : AppWidgetProvider
 
         updateViews.SetTextViewText(Resource.Id.date_5_5, date);
         updateViews.SetTextViewText(Resource.Id.time_5_5, time);
+        */
         return updateViews;
     }
 

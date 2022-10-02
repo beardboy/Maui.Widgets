@@ -58,10 +58,4 @@
 	  <MauiImage Include="Platforms\Android\Resources\drawable\circle.xml" />
 	</ItemGroup>
 
-	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
-	  <PackageReference Include="Xamarin.AndroidX.Work.Runtime">
-	    <Version>2.7.1.4</Version>
-	  </PackageReference>
-	</ItemGroup>
-
 </Project>
