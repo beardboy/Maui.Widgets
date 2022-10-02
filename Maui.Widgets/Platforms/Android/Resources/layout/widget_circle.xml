@@ -1,0 +1,353 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/widget"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              xmlns:tools="http://schemas.android.com/tools"
+              >
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription=""
+        android:src="@drawable/circle2"/>
+
+    <!-- Layout 1x1 -->
+    <RelativeLayout
+        android:id="@+id/layout_1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+          android:id="@+id/name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:paddingTop="10dp"
+          android:text="@string/widget_circle"
+          android:textSize="6dp"
+          android:textColor="@android:color/white"/>
+
+        <TextClock
+	        android:id="@+id/date"
+	        android:format12Hour="MM/dd/yyyy"
+	        android:format24Hour="MM/dd/yyyy"
+	        android:text="10/02/2022"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_below="@id/name"
+	        android:textSize="6dp"
+	        android:textColor="@android:color/white"/>
+
+        <TextClock
+	        android:id="@+id/time"
+	        android:format12Hour="hh:mm:ss a"
+	        android:format24Hour="HH:mm:ss a"
+	        android:text="02:55 PM"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_below="@id/date"
+	        android:textSize="6dp"
+	        android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <!-- Layout 2x1, 3x1, 4x1, 5x1 -->
+    <RelativeLayout
+      android:id="@+id/layout_2_1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:visibility="visible"
+      tools:visibility="visible"
+      android:layout_centerVertical="true">
+
+        <TextView
+          android:id="@+id/name_2_1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:paddingTop="10dp"
+          android:text="@string/widget_circle"
+          android:textSize="8dp"
+          android:textColor="@android:color/white"/>
+
+        <TextClock
+	        android:id="@+id/date_2_1"
+	        android:format12Hour="MM/dd/yyyy"
+	        android:format24Hour="MM/dd/yyyy"
+	        android:text="10/02/2022"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_below="@id/name_2_1"
+	        android:textSize="8dp"
+	        android:textColor="@android:color/white"/>
+
+        <TextClock
+	        android:id="@+id/time_2_1"
+	        android:format12Hour="hh:mm:ss a"
+	        android:format24Hour="HH:mm:ss a"
+	        android:text="02:55 PM"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_below="@id/date_2_1"
+	        android:textSize="8dp"
+	        android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <!-- Layout 2x2, 2x3, 2x4, 2x5 -->
+    <RelativeLayout
+      android:id="@+id/layout_2_2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:visibility="invisible"
+      tools:visibility="visible"
+      android:layout_centerVertical="true">
+
+        <TextView
+          android:id="@+id/name_2_2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:paddingTop="10dp"
+          android:text="@string/widget_circle"
+          android:textSize="12dp"
+          android:textColor="@android:color/white"/>
+
+        <TextClock
+	        android:id="@+id/date_2_2"
+	        android:format12Hour="MM/dd/yyyy"
+	        android:format24Hour="MM/dd/yyyy"
+	        android:text="10/02/2022"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_below="@id/name_2_2"
+	        android:textSize="12dp"
+	        android:textColor="@android:color/white"/>
+
+        <TextClock
+	        android:id="@+id/time_2_2"
+	        android:format12Hour="hh:mm:ss a"
+	        android:format24Hour="HH:mm:ss a"
+	        android:text="02:55 PM"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_below="@id/date_2_2"
+	        android:textSize="12dp"
+	        android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <!-- Layout 3x2, 4x2, 5x2 -->
+    <RelativeLayout
+      android:id="@+id/layout_3_2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:visibility="invisible"
+      tools:visibility="visible"
+      android:layout_centerVertical="true">
+
+        <TextView
+          android:id="@+id/name_3_2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:paddingTop="10dp"
+          android:text="@string/widget_circle"
+          android:textSize="14dp"
+          android:textColor="@android:color/white"/>
+
+        <TextClock
+	        android:id="@+id/date_3_2"
+	        android:format12Hour="MM/dd/yyyy"
+	        android:format24Hour="MM/dd/yyyy"
+	        android:text="10/02/2022"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_below="@id/name_3_2"
+	        android:textSize="14dp"
+	        android:textColor="@android:color/white"/>
+
+        <TextClock
+	        android:id="@+id/time_3_2"
+	        android:format12Hour="hh:mm:ss a"
+	        android:format24Hour="HH:mm:ss a"
+	        android:text="02:55 PM"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_below="@id/date_3_2"
+	        android:textSize="14dp"
+	        android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <!-- Layout 3x3, 4x3, 5x3 -->
+    <RelativeLayout
+      android:id="@+id/layout_3_3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:visibility="invisible"
+      tools:visibility="visible"
+      android:layout_centerVertical="true">
+
+        <TextView
+          android:id="@+id/name_3_3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:paddingTop="10dp"
+          android:text="@string/widget_circle"
+          android:textSize="16dp"
+          android:textColor="@android:color/white"/>
+
+        <TextClock
+	        android:id="@+id/date_3_3"
+	        android:format12Hour="MM/dd/yyyy"
+	        android:format24Hour="MM/dd/yyyy"
+	        android:text="10/02/2022"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_below="@id/name_3_3"
+	        android:textSize="16dp"
+	        android:textColor="@android:color/white"/>
+
+        <TextClock
+	        android:id="@+id/time_3_3"
+	        android:format12Hour="hh:mm:ss a"
+	        android:format24Hour="HH:mm:ss a"
+	        android:text="02:55 PM"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_below="@id/date_3_3"
+	        android:textSize="16dp"
+	        android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <!-- Layout 4x4, 5x4 -->
+    <RelativeLayout
+	    android:id="@+id/layout_4_4"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:visibility="invisible"
+	    tools:visibility="visible"
+	    android:layout_centerVertical="true">
+
+	    <TextView
+		    android:id="@+id/name_4_4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:paddingTop="10dp"
+		    android:text="@string/widget_circle"
+		    android:textSize="18dp"
+		    android:textColor="@android:color/white"/>
+
+	    <TextClock
+		    android:id="@+id/date_4_4"
+		    android:format12Hour="MM/dd/yyyy"
+		    android:format24Hour="MM/dd/yyyy"
+		    android:text="10/02/2022"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:layout_below="@id/name_4_4"
+		    android:textSize="18dp"
+		    android:textColor="@android:color/white"/>
+
+	    <TextClock
+		    android:id="@+id/time_4_4"
+		    android:format12Hour="hh:mm:ss a"
+		    android:format24Hour="HH:mm:ss a"
+		    android:text="02:55 PM"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:layout_below="@id/date_4_4"
+		    android:textSize="18dp"
+		    android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <!-- Layout 5x5 -->
+    <RelativeLayout
+	    android:id="@+id/layout_5_5"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:visibility="invisible"
+	    tools:visibility="visible"
+	    android:layout_centerVertical="true">
+
+	    <TextView
+		    android:id="@+id/name_5_5"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:paddingTop="10dp"
+		    android:text="@string/widget_circle"
+		    android:textSize="24dp"
+		    android:textColor="@android:color/white"/>
+
+	    <TextClock
+		    android:id="@+id/date_5_5"
+		    android:format12Hour="MM/dd/yyyy"
+		    android:format24Hour="MM/dd/yyyy"
+		    android:text="10/02/2022"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:layout_below="@id/name_5_5"
+		    android:textSize="24dp"
+		    android:textColor="@android:color/white"/>
+
+	    <TextClock
+		    android:id="@+id/time_5_5"
+		    android:format12Hour="hh:mm:ss a"
+		    android:format24Hour="HH:mm:ss a"
+		    android:text="02:55 PM"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:layout_below="@id/date_5_5"
+		    android:textSize="24dp"
+		    android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+﻿<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:minWidth="40dp"
+                    android:minHeight="40dp"
+                    android:targetCellWidth="1"
+                    android:targetCellHeight="1"
+                    android:description="@string/widget_circle_description"
+                    android:resizeMode="horizontal|vertical"
+                    android:updatePeriodMillis="1800000"
+                    android:previewImage="@drawable/circle"
+                    android:previewLayout="@layout/widget_circle_preview"
+                    android:initialLayout="@layout/widget_circle"
+                    android:widgetCategory="home_screen"
+                    android:widgetFeatures="reconfigurable|configuration_optional">
+</appwidget-provider>
